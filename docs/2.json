@@ -1,0 +1,15 @@
+{
+  "name": "Boredtopia",
+  "description": "Mint your avatar to discover your tribe and join the adventure!",
+  "image": "https://boredtopia-gen02.github.io/nft/water_1.PNG",
+  "attributes": [
+    {
+      "trait_type": "Tribe",
+      "value": "Water"
+    },
+    {
+      "trait_type": "Stage",
+      "value": "Common"
+    }
+  ]
+}

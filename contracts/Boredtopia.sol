@@ -13,7 +13,7 @@ contract Boredtopia is ERC1155, ERC1155Pausable, AccessControl {
 
     string public name = "Boredtopia";
     string public symbol = "BTOPIA";
-    string private baseURI;
+    string private baseURI = "https://boredtopia-gen02.github.io/nft/";
 
     constructor() ERC1155("") {
         _grantRole(DEFAULT_ADMIN_ROLE, msg.sender);

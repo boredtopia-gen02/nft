@@ -48,6 +48,9 @@ contract BoredtopiaCitizen is ERC1155, ERC1155Pausable, AccessControl {
     function tokenURI(uint tokenId) public view returns (string memory) {
         return string.concat(baseURI, Strings.toString(tokenId), ".json");
     }
+    function uri(uint256 id) public view override returns (string memory) {
+        return tokenURI(id);
+    }
 
     // The following functions are overrides required by Solidity.
 

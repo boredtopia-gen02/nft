@@ -21,15 +21,6 @@ contract Minter is Pausable, AccessControl {
         _grantRole(PAUSER_ROLE, msg.sender);
     }
 
-    modifier canMint(address address_) {
-        bytes32 hashAddr = keccak256(bytes(Strings.toHexString(address_)));
-        require(
-            !_freeMintUsed[hashAddr] || _mintCredit[hashAddr] > 0,
-            "This address has already claimed its free mint and has no more mint credits."
-        );
-        _;
-    }
-
     function pause() public onlyRole(PAUSER_ROLE) {
         _pause();
     }
@@ -46,28 +37,33 @@ contract Minter is Pausable, AccessControl {
     }
 
     function addMintCredit(
-        address user,
+        bytes32 hash,
         uint credit
     ) external whenNotPaused onlyRole(DEFAULT_ADMIN_ROLE) {
-        _mintCredit[keccak256(bytes(Strings.toHexString(user)))] += credit;
+        _mintCredit[hash] += credit;
     }
 
-    function grantFreeMintQuota( address user ) external whenNotPaused onlyRole(DEFAULT_ADMIN_ROLE) {
-        _freeMintUsed[keccak256(bytes(Strings.toHexString(user)))] = false;
+    function grantFreeMintQuota(bytes32 hash) external whenNotPaused onlyRole(DEFAULT_ADMIN_ROLE) {
+        _freeMintUsed[hash] = false;
     }
 
-    function getMintCredit(address user) public view returns (uint) {
-        return _mintCredit[keccak256(bytes(Strings.toHexString(user)))];
+    function getMintCredit(bytes32 hash) public view returns (uint) {
+        return _mintCredit[hash];
     }
 
-    function getHasFreeMintQuota(address user) public view returns (bool) {
-        return !_freeMintUsed[keccak256(bytes(Strings.toHexString(user)))];
+    function getHasFreeMintQuota(bytes32 hash) public view returns (bool) {
+        return !_freeMintUsed[hash];
     }
 
-    function mint() external whenNotPaused canMint(msg.sender) {
+    function mint() external whenNotPaused {
+        bytes32 hashAddr = keccak256(bytes(Strings.toHexString(msg.sender)));
+        require(
+            !_freeMintUsed[hashAddr] || _mintCredit[hashAddr] > 0,
+            "This address has already claimed its free mint and has no more mint credits."
+        );
+
         nft.mint(msg.sender);
 
-        bytes32 hashAddr = keccak256(bytes(Strings.toHexString(msg.sender)));
         if (!_freeMintUsed[hashAddr]) {
             _freeMintUsed[hashAddr] = true;
         } else {

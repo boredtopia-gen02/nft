@@ -1,0 +1,15 @@
+{
+  "name": "Fire Tribe: Pyrians",
+  "description": "The Fire Tribe, or Pyrians the Flame Keepers, are a passionate and energetic people, driven by their inner fire and creativity; they are skilled artisans and warriors, excelling in metalworking and forging, with a dynamic and competitive society valuing innovation, and they dwell in volcanic regions and deserts.",
+  "image": "https://boredtopia-gen02.github.io/nft/fire_4.PNG",
+  "attributes": [
+    {
+      "trait_type": "Tribe",
+      "value": "Fire"
+    },
+    {
+      "trait_type": "Stage",
+      "value": "Legendary"
+    }
+  ]
+}

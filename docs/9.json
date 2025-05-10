@@ -1,0 +1,15 @@
+{
+  "name": "Wood Tribe: Sylvans",
+  "description": "The Wood Tribe, or Sylvans the Root Weavers, are a harmonious and nurturing people, deeply connected to the forests, known for their wisdom, healing abilities, and knowledge of plants and animals; their culture revolves around herbalism, woodworking, and animal husbandry, with a communal society valuing sustainability, and they reside in dense forests and ancient groves.",
+  "image": "https://boredtopia-gen02.github.io/nft/wood_2.PNG",
+  "attributes": [
+    {
+      "trait_type": "Tribe",
+      "value": "Wood"
+    },
+    {
+      "trait_type": "Stage",
+      "value": "Uncommon"
+    }
+  ]
+}

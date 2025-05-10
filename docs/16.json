@@ -1,0 +1,15 @@
+{
+  "name": "Earth Tribe: Terrans",
+  "description": "The Earth Tribe, or Terrans the Stone Walkers, are a robust and grounded people, defined by their physical strength and unwavering connection to the land; they are skilled in agriculture, mining, and stonework, building enduring structures and valuing tradition, with a hierarchical society and a calm, deliberate demeanor, thriving in mountainous regions and fertile valleys.",
+  "image": "https://boredtopia-gen02.github.io/nft/earth_4.PNG",
+  "attributes": [
+    {
+      "trait_type": "Tribe",
+      "value": "Earth"
+    },
+    {
+      "trait_type": "Stage",
+      "value": "Legendary"
+    }
+  ]
+}

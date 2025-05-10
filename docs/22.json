@@ -1,0 +1,15 @@
+{
+  "name": "Water Tribe: Aquarians",
+  "description": "The Water Tribe, or Aquarians the Tide Weavers, are a fluid and adaptable people, attuned to the rhythms of water, known for their grace, intuition, and healing abilities; their culture revolves around fishing, sailing, and water-based crafts, with an egalitarian society valuing cooperation, residing in coastal villages and river settlements.",
+  "image": "https://boredtopia-gen02.github.io/nft/water_5.PNG",
+  "attributes": [
+    {
+      "trait_type": "Tribe",
+      "value": "Water"
+    },
+    {
+      "trait_type": "Stage",
+      "value": "Mythic"
+    }
+  ]
+}

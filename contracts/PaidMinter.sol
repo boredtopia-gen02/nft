@@ -6,7 +6,7 @@ import "@openzeppelin/contracts/access/AccessControl.sol";
 import "@openzeppelin/contracts/utils/Strings.sol";
 
 interface INft {
-    function mint(address account) external;
+    function randomMint(address account, uint256 nonce) external;
 }
 
 contract PaidMinter is Pausable, AccessControl {
@@ -59,7 +59,7 @@ contract PaidMinter is Pausable, AccessControl {
         payable(platformWallet).transfer(totalPrice);
 
         for (uint256 i = 0; i < amount; i++) {
-            nft.mint(msg.sender);
+            nft.randomMint(msg.sender, i);
         }
     }
 }

@@ -11,7 +11,7 @@ interface INft {
 
 contract PaidMinter is Pausable, AccessControl {
     bytes32 public constant PAUSER_ROLE = keccak256("PAUSER_ROLE");
-    uint256 public mintPrice = 1 ether;
+    uint256 public mintPrice = 2 ether; // SEI
     address public platformWallet;
     INft public nft;
 

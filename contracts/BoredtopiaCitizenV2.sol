@@ -75,7 +75,7 @@ contract BoredtopiaCitizenV2 is ERC1155, ERC1155Pausable, AccessControl {
 
         // full scan
         for (uint256 id = 1; id <= 20; id++) {
-            if (balanceOf(user, id) > 2) {
+            if (balanceOf(user, id) >= 2) {
                 full[count] = id;
                 count++;
             }

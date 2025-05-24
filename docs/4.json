@@ -1,11 +1,11 @@
 {
-  "name": "Wood Tribe: Sylvans",
-  "description": "The Wood Tribe, or Sylvans the Root Weavers, are a harmonious and nurturing people, deeply connected to the forests, known for their wisdom, healing abilities, and knowledge of plants and animals; their culture revolves around herbalism, woodworking, and animal husbandry, with a communal society valuing sustainability, and they reside in dense forests and ancient groves.",
-  "image": "https://boredtopia-gen02.github.io/nft/wood_1.PNG",
+  "name": "Water Tribe: Aquarians",
+  "description": "The Water Tribe, or Aquarians the Tide Weavers, are a fluid and adaptable people, attuned to the rhythms of water, known for their grace, intuition, and healing abilities; their culture revolves around fishing, sailing, and water-based crafts, with an egalitarian society valuing cooperation, residing in coastal villages and river settlements.",
+  "image": "https://boredtopia-gen02.github.io/nft/water_1.PNG",
   "attributes": [
     {
       "trait_type": "Tribe",
-      "value": "Wood"
+      "value": "Water"
     },
     {
       "trait_type": "Stage",

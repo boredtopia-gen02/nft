@@ -1,11 +1,11 @@
 {
-  "name": "Wind Tribe: Aerians",
-  "description": "The Wind Tribe, or Aerians the Skyborn, are a free-spirited and adaptable people, attuned to the currents of the air, known for their agility, intelligence, and communication skills; their culture emphasizes flying, exploration, and messaging, with a nomadic society valuing freedom, and they inhabit mountainous peaks and floating cities.",
-  "image": "https://boredtopia-gen02.github.io/nft/wind_3.PNG",
+  "name": "Wood Tribe: Sylvans",
+  "description": "The Wood Tribe, or Sylvans the Root Weavers, are a harmonious and nurturing people, deeply connected to the forests, known for their wisdom, healing abilities, and knowledge of plants and animals; their culture revolves around herbalism, woodworking, and animal husbandry, with a communal society valuing sustainability, and they reside in dense forests and ancient groves.",
+  "image": "https://boredtopia-gen02.github.io/nft/wood_3.PNG",
   "attributes": [
     {
       "trait_type": "Tribe",
-      "value": "Wind"
+      "value": "Wood"
     },
     {
       "trait_type": "Stage",

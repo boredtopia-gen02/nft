@@ -1,11 +1,11 @@
 {
-  "name": "Water Tribe: Aquarians",
-  "description": "The Water Tribe, or Aquarians the Tide Weavers, are a fluid and adaptable people, attuned to the rhythms of water, known for their grace, intuition, and healing abilities; their culture revolves around fishing, sailing, and water-based crafts, with an egalitarian society valuing cooperation, residing in coastal villages and river settlements.",
-  "image": "https://boredtopia-gen02.github.io/nft/water_3.PNG",
+  "name": "Wind Tribe: Aerians",
+  "description": "The Wind Tribe, or Aerians the Skyborn, are a free-spirited and adaptable people, attuned to the currents of the air, known for their agility, intelligence, and communication skills; their culture emphasizes flying, exploration, and messaging, with a nomadic society valuing freedom, and they inhabit mountainous peaks and floating cities.",
+  "image": "https://boredtopia-gen02.github.io/nft/wind_3.PNG",
   "attributes": [
     {
       "trait_type": "Tribe",
-      "value": "Water"
+      "value": "Wind"
     },
     {
       "trait_type": "Stage",
